@@ -77,7 +77,7 @@ button,
 /* -----------------------------------------------------------------
     Style Footer Section
 --------------------------------------------------------------------*/
-footer{
+.page-footer{
     color: var(--SkyBlue);
     background-color: var(--Purple); 
     padding: 1em;
@@ -98,22 +98,22 @@ footer{
     display:inline;
     margin-right: 1rem;
 }
-li{
+.left-footer li, .center-footer li, .right-footer li{
     display: block;
     margin-top: .5rem;
 }
 
-h2{
+.left-footer h2, .center-footer h2, .right-footer h2{
     margin-bottom: 1rem;
 }
 
-h1{
+.logo h1{
     margin-bottom: 1rem;
 }
-p{
+.copyright p,.logo p{
     margin-bottom: 1rem;
 }
 
-i{
+.social-icons i{
     font-size: 1.5em;
 }
