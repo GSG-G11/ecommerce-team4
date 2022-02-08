@@ -8,7 +8,7 @@
     04ز [Style Section Name]
     05. [Style Section Name]
     06. [Style Section Name]
-    07. [Style Section Name]
+    07. [Style Footer Section]
 
 -----------------------------------------------------------------------------------*/
 
@@ -94,9 +94,13 @@ footer{
     grid-column: 2/5;
 }
 
-li{
-    display: inline;
+.logo .social-icons li{
+    display:inline;
     margin-right: 1rem;
+}
+li{
+    display: block;
+    margin-top: .5rem;
 }
 
 h2{
