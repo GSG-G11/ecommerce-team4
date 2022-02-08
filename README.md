@@ -22,3 +22,8 @@ We have two flows:
 * I can to be able to edit all the information of my product.
 ## Links :tv:
  [Live link.](https://gsg-g11.github.io/ecommerce-team4/)
+ ## Team :bearded_person: :person_with_headscarf:
+* Karam Zomlut.
+* Maram Ismail.
+* Mahmoud Alhato.
+* Rawan Algharabli.
