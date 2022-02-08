@@ -175,6 +175,10 @@ button,
     align-items: center;
 }
 
+.icon-button {
+    background-color: white;
+}
+
 .ri-close-circle-line {
     font-size: 2rem;
     transition: color .5s;
@@ -223,10 +227,10 @@ button,
 }
 
 .delete-all-items {
-    width: 35%;
-    height: 4rem;
+    width: 20%;
+    height: 3rem;
     background-color: var(--SkyBlue);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--NavyBlue);
     transition: background-color 1s;
 }
