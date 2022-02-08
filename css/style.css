@@ -8,7 +8,7 @@
     04ز [Style Section Name]
     05. [Style Section Name]
     06. [Style Section Name]
-    07. [Style Section Name]
+    07. [Style Footer Section]
 
 -----------------------------------------------------------------------------------*/
 
@@ -74,7 +74,6 @@ button,
     margin: 0 auto;
     padding: 0 15px;
 }
-
 
 /* -----------------------------------------------------------------
     Style Page Header
@@ -191,4 +190,48 @@ button,
 .navbar .btns-div .btn:hover{
     background: #FFF;
     color: #000;
+}
+
+/* -----------------------------------------------------------------
+    Style Footer Section
+--------------------------------------------------------------------*/
+.page-footer{
+    color: var(--SkyBlue);
+    background-color: var(--Purple); 
+    padding: 1em;
+}
+.container-footer{
+    width: 100%;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 4fr 2fr 2fr 2fr ;
+    box-sizing: border-box;
+}
+
+.copyright{
+    grid-column: 2/5;
+}
+
+.logo .social-icons li{
+    display:inline;
+    margin-right: 1rem;
+}
+.left-footer li, .center-footer li, .right-footer li{
+    display: block;
+    margin-top: .5rem;
+}
+
+.left-footer h2, .center-footer h2, .right-footer h2{
+    margin-bottom: 1rem;
+}
+
+.logo h1{
+    margin-bottom: 1rem;
+}
+.copyright p,.logo p{
+    margin-bottom: 1rem;
+}
+
+.social-icons i{
+    font-size: 1.5em;
 }
