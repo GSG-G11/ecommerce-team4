@@ -78,7 +78,7 @@ button,
 /* -----------------------------------------------------------------
     Style Page Header
 --------------------------------------------------------------------*/
-.page-header{
+.page-header.home{
     height: 95vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url(../img/page-header.png) center center no-repeat;
 }
@@ -132,7 +132,7 @@ button,
 --------------------------------------------------------------------*/
 .navbar{
     padding: 25px 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -190,6 +190,48 @@ button,
 .navbar .btns-div .btn:hover{
     background: #FFF;
     color: #000;
+}
+
+.navbar .search-form{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    padding: 5px 15px;
+    height: 100px;
+    background: #FFF;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .7s;
+}
+
+.navbar .search-form.open{
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    z-index: 9999;
+}
+
+.navbar .search-form .inpt{
+    display: inline-block;
+    flex: 1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #a065b475;
+    font-weight: bold;
+}
+
+.navbar .search-form .inpt::placeholder{
+    color: #a065b438;
+}
+
+.navbar .search-form .btn{
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    margin: 0 5px;
+    background: none;
+    color: #7e33e0;
 }
 
 /* -----------------------------------------------------------------
