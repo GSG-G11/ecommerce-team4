@@ -74,3 +74,42 @@ button,
     margin: 0 auto;
     padding: 0 15px;
 }
+/* -----------------------------------------------------------------
+    Style Footer Section
+--------------------------------------------------------------------*/
+footer{
+    color: var(--SkyBlue);
+    background-color: var(--Purple); 
+    padding: 1em;
+}
+.container-footer{
+    width: 100%;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 4fr 2fr 2fr 2fr ;
+    box-sizing: border-box;
+}
+
+.copyright{
+    grid-column: 2/5;
+}
+
+li{
+    display: inline;
+    margin-right: 1rem;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+p{
+    margin-bottom: 1rem;
+}
+
+i{
+    font-size: 1.5em;
+}
