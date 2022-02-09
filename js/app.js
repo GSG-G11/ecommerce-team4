@@ -21,6 +21,11 @@ saveBtn.addEventListener("click", (e) => {
     addProductToArray(pdtName.value, pdtDesc.value, pdtImage.value, pdtPrice.value, pdtCtg.value);
 
     addPdt.classList.remove("open");
+    pdtName.value = "";
+    pdtDesc.value = "";
+    pdtImage.value = "";
+    pdtPrice.value = "";
+    pdtCtg.value = "";
 })
 
 
