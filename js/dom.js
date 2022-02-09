@@ -25,6 +25,46 @@ function addProductToPage(arrOfProduct) {
     });
 }
 
+// Add Products to customer Page
+function addProductToCustomerPage(arrOfProduct) {
+    let listOfProductCustomer = document.querySelector(".customer .product-list");
+
+    listOfProductCustomer.innerHTML = "";
+    arrOfProduct.forEach(product => {
+        listOfProductCustomer.innerHTML +=
+            `
+            <div class="card" data-id="${product.id}">
+            <div class="card-img">
+                <img src="${product.img}" alt="product-image" />
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">
+                ${product.name}
+                    <span>${product.category} Category</span>
+                </h3>
+                <span class="card-price">${product.price}$</span>
+                <span class="card-star"><i class="ri-star-half-line"></i></span>
+                <span class="card-star"><i class="ri-star-half-line"></i></span>
+                <span class="card-star"><i class="ri-star-half-line"></i></span>
+                <span class="card-star"><i class="ri-star-half-line"></i></span>
+                <span class="card-star"><i class="ri-star-half-line"></i></span>
+                <p class="card-text">
+                ${product.desc}
+                </p>
+
+                <br />
+                <button class="card-edit" data-id="add-cart">
+                    <i class="ri-shopping-cart-line"></i>
+                </button>
+                <button class="card-delete">
+                   <i class="ri-heart-line">
+                    </i>
+                </button>
+            </div>
+        </div>
+        `;
+    });
+}
 
 // Add Array Of Products to Local Storage
 function addToLocalStorage(arrOfProduct) {
@@ -40,6 +80,7 @@ function getProductsFromLocalStorage() {
     if (data) {
         let productData = JSON.parse(data);
         addProductToPage(productData);
+        addProductToCustomerPage(productData);
     }
 }
 
