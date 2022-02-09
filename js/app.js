@@ -1,18 +1,57 @@
-
 let arrOfProduct = [];
-let addProductToArray = (id, name, desc, price, img, category) => {
+
+if (window.localStorage.getItem("products")){
+    arrOfProduct = JSON.parse(window.localStorage.getItem("products"));
+}
+
+// Add Product Form Variable
+let pdtName = document.querySelector("form #pdt-name");
+let pdtDesc = document.querySelector("form #pdt-desc");
+let pdtImage = document.querySelector("#pdt-image");
+let pdtPrice = document.querySelector("form #pdt-price");
+let pdtCtg = document.querySelector("form #pdt-ctg");
+let saveBtn = document.querySelector("form #save-product");
+let addPdt = document.querySelector("#add-product")
+
+
+
+saveBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    addProductToArray(pdtName.value, pdtDesc.value, pdtImage.value, pdtPrice.value, pdtCtg.value);
+
+    addPdt.classList.remove("open");
+})
+
+
+function addProductToArray (name, dsec, img, price, ctg){
     const product = {
-        id: id,
+        id: Date.now(),
         name: name,
-        desc: desc,
+        desc: dsec,
         price: price,
         img: img,
-        category: category
+        category: ctg
     }
 
+    // Push Product To Array
     arrOfProduct.push(product);
 
+    // Add The Array To Local Storage
+    addToLocalStorage(arrOfProduct);
+
+    // Update The List Of Product On Page
+    addProductToPage(arrOfProduct)
+
     return arrOfProduct;
+}
+
+function getProductsFromLocalStorage () {
+    let data = window.localStorage.getItem("products");
+    if (data) {
+        let productData = JSON.parse(data);
+        addProductToPage(productData);
+    }
 }
 
 
