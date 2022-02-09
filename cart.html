@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,39 +9,218 @@
     <!-- Calling Fonts (Online) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
 
     <!-- Calling CSS Libraries (Online) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Calling CSS Files -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/your-page.css"> -->
+    <link rel="stylesheet" href="css/cart.css" />
     <link rel="stylesheet" href="css/media.css" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
     <!-- Page Title -->
-    <title>E-Commerce</title>
-  </head>
-  <body>
+    <title>Cart page</title>
+</head>
+
+<body>
     <!-- Start Page Header -->
-    <header class="page-header"></header>
+    <header class="page-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="#" class="brand">
+                        <img src="img/logo.png" alt="Logo"> E-Shop
+                    </a>
+
+                    <ul class="link-list">
+                        <li class="item"><a href="#" class="item-link">Products</a></li>
+                        <li class="item"><a href="#" class="item-link">Insipiration</a></li>
+                        <li class="item"><a href="#" class="item-link">Rooms</a></li>
+                    </ul>
+
+                    <div class="btns-div">
+                        <button class="btn search-btn toggle-search" id="open-search">
+                            <i class="ri-search-line"></i>
+                        </button>
+
+                        <button class="btn cart-btn" id="cart-btn">
+                            <i class="ri-shopping-cart-2-line"></i>
+                        </button>
+
+                        <button class="btn logout-btn" id="logout-btn">
+                            <i class="ri-logout-box-r-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <form onsubmit="return false" class="search-form" id="search-form">
+                <input type="text" class="inpt" id="search-input" placeholder="SEARCH HERE...">
+                <button class="btn search-btn" id="search-btn">
+                    <i class="ri-search-line"></i>
+                </button>
+                <button class="btn close-btn toggle-search" id="close-search">
+                    <i class="ri-close-line"></i>
+                </button>
+            </form>
+        </nav>
+    </header>
     <!-- End Page Header -->
 
     <!-- Start Page Main -->
-    <main class="page-main"></main>
+    <main class="page-main">
+        <!-- start title for the whole page -->
+        <div class="first-look">
+            <h2 class="main-title">Shopping Cart</h2>
+        </div>
+        <!-- end title for the whole page -->
+
+        <div class="container">
+            <!-- start the list content -->
+            <div class="list-of-item-added-to-cart">
+                <div class="title-of-product">
+                    <h4 class="title-of-all-product">Product</h4>
+                    <h4 class="title-of-all-product">Price</h4>
+                </div>
+                <div class="product-list">
+                    <div class="img-with-product">
+                        <img class="img-of-product" src="img/product1.png" alt="image of the product" />
+                        <div class="title-of-product-and-description">
+                            <h5 class="title-of-the-product">Labtop</h5>
+                            <p class="description-of-the-product">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos modi earum fugiat autem hic temporibus aut, deleniti labore. Maxime, rerum nisi aperiam aliquam voluptas doloremque perspiciatis at impedit quo?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="delete-and-price">
+                        <button class="icon-button">
+                            <i class="ri-close-circle-line"></i>
+                        </button>
+                        <h5 class="price-of-product">$200</h5>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <div class="img-with-product">
+                        <img class="img-of-product" src="img/product1.png" alt="image of the product" />
+                        <div class="title-of-product-and-description">
+                            <h5 class="title-of-the-product">Labtop</h5>
+                            <p class="description-of-the-product">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos modi earum fugiat autem hic temporibus aut, deleniti labore. Maxime, rerum nisi aperiam aliquam voluptas doloremque perspiciatis at impedit quo?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="delete-and-price">
+                        <button class="icon-button">
+                            <i class="ri-close-circle-line"></i>
+                            </button>
+                        <h5 class="price-of-product">$200</h5>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <div class="img-with-product">
+                        <img class="img-of-product" src="img/product1.png" alt="image of the product" />
+                        <div class="title-of-product-and-description">
+                            <h5 class="title-of-the-product">Labtop</h5>
+                            <p class="description-of-the-product">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos modi earum fugiat autem hic temporibus aut, deleniti labore. Maxime, rerum nisi aperiam aliquam voluptas doloremque perspiciatis at impedit quo?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="delete-and-price">
+                        <button class="icon-button">
+                            <i class="ri-close-circle-line"></i>
+                            </button>
+                        <h5 class="price-of-product">$200</h5>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <div class="img-with-product">
+                        <img class="img-of-product" src="img/product1.png" alt="image of the product" />
+                        <div class="title-of-product-and-description">
+                            <h5 class="title-of-the-product">Labtop</h5>
+                            <p class="description-of-the-product">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos modi earum fugiat autem hic temporibus aut, deleniti labore. Maxime, rerum nisi aperiam aliquam voluptas doloremque perspiciatis at impedit quo?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="delete-and-price">
+                        <button class="icon-button">
+                            <i class="ri-close-circle-line"></i>
+                            </button>
+                        <h5 class="price-of-product">$200</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- end the list content -->
+
+            <!-- start  total price and delete all-->
+            <div class="total-price-and-delete-all">
+                <div class="total-price-and-the-title">
+                    <h3 class="total-price-title">total price =</h3>
+                    <h5 class="total-price">$200</h5>
+                </div>
+
+                <button class="delete-all-items">Delete all</button>
+            </div>
+            <!-- end  total price and delete all-->
+        </div>
+    </main>
     <!-- End Page Main -->
 
     <!-- Start Page Footer -->
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="container-footer">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <h1>Ecommerce APP</h1>
+                    <p>Ecommerce is a website that presents different types of products to sale. The website allows users to sign in as a seller or a buyer. A seller can add his products and share them with all buyers who can choose the product that they
+                        liked and buy it or save it in the cart.</p>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+                    </ul>
+                </div>
+                <div class="left-footer">
+                    <h2>Shopping Online</h2>
+                    <ul class="shopping-online">
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Shipping and Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="center-footer">
+                    <h2>Information</h2>
+                    <ul class="information">
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Find a store</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Bacome a member</a></li>
+                        <li><a href="#">Site feedback</a></li>
+                    </ul>
+                </div>
+                <div class="right-footer">
+                    <h2>Contact</h2>
+                    <ul class="contact">
+                        <li><a href="#">store@store.com</a></li>
+                        <li><a href="#">Hotline: +1111 111 111</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>DESIGN BY TEME4 &copy; 2022 ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- End Page Footer -->
 
     <!-- Calling Js Files -->
@@ -48,5 +228,6 @@
     <script src="js/dom.js"></script>
     <!-- For Front End -->
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

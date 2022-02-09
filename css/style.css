@@ -8,15 +8,18 @@
     04ز [Style Section Name]
     05. [Style Section Name]
     06. [Style Section Name]
-    07. [Style Section Name]
+    07. [Style Footer Section]
 
 -----------------------------------------------------------------------------------*/
+
 
 /* -----------------------------------------------------------------
     Style Slider Section
 --------------------------------------------------------------------*/
 
+
 /* Variables */
+
 :root {
     --Pink: #fb2e86;
     --Red: #fa2546;
@@ -28,6 +31,7 @@
     --Purple: #7e33e0;
     --OffPurple: #a065b4;
     --OffBlue: #151875;
+    --LightPurble: #F6F5FF;
 }
 
 * {
@@ -74,3 +78,413 @@ button,
     margin: 0 auto;
     padding: 0 15px;
 }
+
+
+/* -----------------------------------------------------------------
+    Style Signup Page
+--------------------------------------------------------------------*/
+
+.account-page {
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sign-back.png) no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-page .form {
+    background-color: #FFF;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.account-page .form-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.form-btns .btn {
+    flex-basis: 50%;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--OffNavyBlue);
+    opacity: .7;
+    background-color: transparent;
+    transition: color .4s, opacity .4s;
+}
+
+.form .form-btns .btn#customer-acc {
+    opacity: 1;
+    color: var(--NavyBlue);
+}
+
+.form.seller .form-btns .btn#seller-acc {
+    opacity: 1;
+    color: var(--NavyBlue);
+}
+
+.form.seller .form-btns .btn#customer-acc {
+    opacity: .7;
+    color: var(--OffNavyBlue);
+}
+
+.form-btns .btn:hover {
+    opacity: 1;
+    color: var(--NavyBlue);
+}
+
+.account-page .form .main-form {
+    position: absolute;
+    top: 100px;
+    padding: 0 15px;
+    max-width: 350px;
+    padding: 0 15px;
+    transition: all .8s;
+}
+
+.form .main-form input {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--PantonePurple);
+    margin: 0.6rem 0;
+    border-radius: 3px;
+}
+
+.form .main-form .btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 2rem;
+    border-radius: 3px;
+    background-color: var(--OffNavyBlue);
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    opacity: .8;
+    transition: opacity .5s;
+}
+
+.form .main-form .btn:hover {
+    opacity: 1;
+}
+
+.form .main-form#seller-form {
+    left: -350px;
+    transform: translateX(0);
+}
+
+.form .main-form#customer-form {
+    left: 0;
+    transform: translateX(0);
+}
+
+.form.seller .main-form#seller-form {
+    transform: translateX(350px);
+}
+
+.form.seller .main-form#customer-form {
+    transform: translateX(350px);
+}
+
+
+/* -----------------------------------------------------------------
+    Style Page Header
+--------------------------------------------------------------------*/
+
+.page-header .main-header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/page-header.png) center center no-repeat;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-header .page-title {
+    color: #FFF;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.main-header .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 900;
+    color: #FFF;
+    letter-spacing: .5px;
+}
+
+.main-header .btn:hover i {
+    margin-right: 20px;
+}
+
+.main-header .btn i {
+    width: 35px;
+    height: 35px;
+    font-weight: normal;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: var(--Blue);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all .4s;
+}
+
+
+/* -----------------------------------------------------------------
+    Style Navbar
+--------------------------------------------------------------------*/
+.home .navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.navbar {
+    padding: 25px 0;
+    transition: all .4s;
+    background-color: #a065b4;
+}
+
+.navbar .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .brand {
+    color: #FFF;
+}
+
+.brand img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar .link-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.link-list .item-link {
+    padding: 5px 15px;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.navbar .btns-div .btn {
+    background-color: transparent;
+    color: #FFF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: all .4s;
+}
+
+.navbar .btns-div .btn:hover {
+    background: #FFF;
+    color: #000;
+}
+
+.navbar .search-form {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    padding: 5px 15px;
+    height: 100px;
+    background: #FFF;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .7s;
+}
+
+.navbar .search-form.open {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    z-index: 9999;
+}
+
+.navbar .search-form .inpt {
+    display: inline-block;
+    flex: 1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #a065b475;
+    font-weight: bold;
+}
+
+.navbar .search-form .inpt::placeholder {
+    color: #a065b438;
+}
+
+.navbar .search-form .btn {
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    margin: 0 5px;
+    background: none;
+    color: #7e33e0;
+}
+
+
+/* -----------------------------------------------------------------
+    Style Add Product Form (POP UP)
+--------------------------------------------------------------------*/
+.pop-sec{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .7s;
+}
+
+.pop-sec.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.pop-sec .form{
+    background-color: #FFF;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px 15px 20px;
+    border-radius: 5px;
+}
+
+.pop-sec .form .form-title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: var(--OffNavyBlue);
+}
+
+.pop-sec .form textarea{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--PantonePurple);
+    margin: 0.6rem 0;
+    border-radius: 3px;
+}
+
+.pop-sec .form .ctg-slct{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--PantonePurple);
+    margin: 0.6rem 0;
+    border-radius: 3px;
+}
+
+.pop-sec .form-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop-sec .form-btns .btn:first-child{
+    margin-right: 1rem;
+}
+
+.pop-sec .form-btns .btn:last-child{
+    border: 2px solid var(--OffNavyBlue);
+    background-color: transparent;
+    color: var(--OffNavyBlue);
+}
+
+/* -----------------------------------------------------------------
+    Style Footer Section
+--------------------------------------------------------------------*/
+
+.page-footer {
+    color: var(--SkyBlue);
+    background-color: var(--Purple);
+    padding: 1em;
+    margin-top: 3rem;
+}
+
+.container-footer {
+    width: 100%;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
+    box-sizing: border-box;
+}
+
+.copyright {
+    grid-column: 2/5;
+}
+
+.logo .social-icons li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.left-footer li,
+.center-footer li,
+.right-footer li {
+    display: block;
+    margin-top: .5rem;
+}
+
+.left-footer h2,
+.center-footer h2,
+.right-footer h2 {
+    margin-bottom: 1rem;
+}
+
+.logo h1 {
+    margin-bottom: 1rem;
+}
+
+.copyright p,
+.logo p {
+    margin-bottom: 1rem;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+}
+

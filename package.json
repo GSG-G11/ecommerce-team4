@@ -1,0 +1,22 @@
+{
+  "name": "ecommerce-team4",
+  "version": "1.0.0",
+  "description": "* [Purpose](#Purpose-)\r * [User Stories](#User-Stories-)\r * [Links](#Links-)\r * [Team](#Team-)\r ## Purpose  :pencil: \r Ecommerce website presents different types of products to sale. The website allows users to sign in as a seller or a buyer. A seller can add his products and share them with all buyers who can choose the product that they liked and buy it or save it in the cart.\r ## User Stories :books:\r We have two flows:\r ### 1. As a Buyer/Customer  \r * I can to see all of the items available on the store.\r * I can to able to search for item on the store by the name.\r * I can to able to filter items by the price or by category.\r * I can to add item to my Cart.\r * I can to be able to see the items inside my cart.\r * I can to be able to delete any items inside my cart.\r * I can to be able to see the total price of the items inside my cart.\r * I can to be able to disply the items either as a grid or a list.\r ### 2. As a Seller\r * I can to be able to add my product (name, detail, price, image[link], and category).\r * Should have the category as a list of options (dropdown menu).\r * I can to be able to see all of my product.\r * I can to be able to search through my products.\r * I can to be able to delete my own product.\r * I can to be able to edit all the information of my product.\r ## Links :tv:\r ### [Live link.](https://gsg-g11.github.io/ecommerce-team4/)\r ## Team :busts_in_silhouette: \r * Karam Zomlut.\r * Maram Ismail.\r * Mahmoud Alhato.\r * Rawan Algharabli.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G11/ecommerce-team4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G11/ecommerce-team4/issues"
+  },
+  "homepage": "https://github.com/GSG-G11/ecommerce-team4#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}

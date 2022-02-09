@@ -1,17 +1,180 @@
 /*-----------------------------------------------------------------------------------
 
-  [Table of contents]
+    [Table of contents]
 
-  01. [Base (Global style for some elements)]
-  02. [Style Section Name]
-  03. [Style Section Name]
-  04ز [Style Section Name]
-  05. [Style Section Name]
-  06. [Style Section Name]
-  07. [Style Section Name]
+    01. [Base (Global style for some elements)]
+    02. [Style Section Name]
+    03. [Style Section Name]
+    04ز [Style Section Name]
+    05. [Style Section Name]
+    06. [Style Section Name]
+    07. [Style Section Name]
 
 -----------------------------------------------------------------------------------*/
 
+
 /* -----------------------------------------------------------------
-  Global style for some elements
+    Style Slider Section
 --------------------------------------------------------------------*/
+
+.page-main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* start title for the whole page */
+
+.first-look {
+    background-color: var(--LightPurble);
+    width: 100%;
+    font-size: 2rem;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    color: var(--OffBlue);
+}
+
+
+/* end title for the whole page */
+
+
+/* -----------------------------------------------------------------
+    Style Slider Section
+--------------------------------------------------------------------*/
+
+
+/* start the list content */
+
+.list-of-item-added-to-cart {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.title-of-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-of-all-product {
+    color: var(--OffBlue);
+    font-size: 1.7rem;
+}
+
+.product-list {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 2rem;
+}
+
+.img-with-product {
+    display: flex;
+    flex-direction: row;
+}
+
+.title-of-product-and-description {
+    margin-left: 1rem;
+}
+
+.title-of-the-product {
+    font-size: 1.5rem;
+}
+
+.description-of-the-product {
+    margin-top: 1rem;
+    color: gray;
+    margin-right: 1rem;
+}
+
+.img-of-product {
+    height: 10rem;
+}
+
+.price-of-product {
+    margin-top: 1rem;
+    color: var(--OffBlue);
+    font-size: 1.3rem;
+}
+
+.delete-and-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-button {
+    background-color: white;
+}
+
+.ri-close-circle-line {
+    font-size: 2rem;
+    transition: color .5s;
+}
+
+.ri-close-circle-line:hover {
+    color: red;
+    /* background-color: red; */
+}
+
+
+/* end the list content */
+
+
+/* -----------------------------------------------------------------
+    Style Slider Section
+--------------------------------------------------------------------*/
+
+
+/* start  total price and delete all */
+
+.total-price-and-delete-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.total-price-and-the-title {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.total-price-title {
+    font-size: 2rem;
+    color: var(--OffBlue);
+}
+
+.total-price {
+    text-decoration-line: underline;
+    font-size: 2rem;
+    color: var(--OffBlue);
+    margin-left: 1rem;
+}
+
+.delete-all-items {
+    width: 20%;
+    height: 3rem;
+    background-color: var(--SkyBlue);
+    font-size: 1.5rem;
+    color: var(--NavyBlue);
+    transition: background-color 1s;
+}
+
+.delete-all-items:hover {
+    background-color: var(--Red);
+    color: white;
+}
+
+
+/* end total price and delete all */
