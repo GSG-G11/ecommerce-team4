@@ -28,7 +28,7 @@
 
 <body>
     <!-- Start Page Header -->
-    <header class="page-header">
+    <header class="page-header home">
         <nav class="navbar">
             <div class="container">
                 <div class="nav-content">
@@ -44,7 +44,7 @@
                     </ul>
 
                     <div class="btns-div">
-                        <button class="btn search-btn" id="search-btn">
+                        <button class="btn search-btn toggle-search" id="open-search">
                             <i class="ri-search-line"></i>
                         </button>
 
@@ -58,6 +58,16 @@
                     </div>
                 </div>
             </div>
+
+            <form onsubmit="return false" class="search-form" id="search-form">
+                <input type="text" class="inpt" id="search-input" placeholder="SEARCH HERE...">
+                <button class="btn search-btn" id="search-btn">
+                    <i class="ri-search-line"></i>
+                </button>
+                <button class="btn close-btn toggle-search" id="close-search">
+                    <i class="ri-close-line"></i>
+                </button>
+            </form>
         </nav>
 
         <div class="main-header">
