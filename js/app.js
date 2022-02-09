@@ -47,17 +47,19 @@ function addProductToArray(name, dsec, img, price, ctg) {
 
     // Update The List Of Product On Page
     addProductToPage(arrOfProduct)
+    addProductToCustomerPage(arrOfProduct)
 
     return arrOfProduct;
 }
 
-function getProductsFromLocalStorage() {
-    let data = window.localStorage.getItem("products");
-    if (data) {
-        let productData = JSON.parse(data);
-        addProductToPage(productData);
-    }
-}
+// function getProductsFromLocalStorage() {
+//     let data = window.localStorage.getItem("products");
+//     if (data) {
+//         let productData = JSON.parse(data);
+//         addProductToPage(productData);
+//         addProductToCustomerPage(productData)
+//     }
+// }
 // getProductsFromLocalStorage();
 
 let listOfProduct = document.querySelector(".seller .product-list");
@@ -103,6 +105,8 @@ listOfProduct.addEventListener("click", (e) => {
             
             addToLocalStorage(arrOfProduct);
             addProductToPage(arrOfProduct);
+            addProductToCustomerPage(arrOfProduct)
+        
         })
     }
 
