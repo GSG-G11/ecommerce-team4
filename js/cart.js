@@ -26,5 +26,17 @@ function addProductToCartPage(cartProduct) {
     });
 }
 
+let cartProductList = document.querySelector(".cart .cart-list");
+
+cartProductList.addEventListener("click", (e) => {
+    let thisIs = e.target;
+
+    if (thisIs.dataset.id === "delete"){
+        thisIs.parentElement.parentElement.remove();
+        cartProduct = cartProduct.filter(product => product.id != thisIs.parentElement.parentElement.dataset.id);
+        addCartToLocalStorage(cartProduct)
+
+    }
+})
 
 
