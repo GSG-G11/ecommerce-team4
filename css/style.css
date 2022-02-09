@@ -72,6 +72,10 @@ button,
     cursor: pointer;
 }
 
+i {
+    pointer-events: none;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -248,7 +252,8 @@ button,
 /* -----------------------------------------------------------------
     Style Navbar
 --------------------------------------------------------------------*/
-.home .navbar{
+
+.home .navbar {
     position: absolute;
     top: 0;
     left: 0;
@@ -361,7 +366,8 @@ button,
 /* -----------------------------------------------------------------
     Style Add Product Form (POP UP)
 --------------------------------------------------------------------*/
-.pop-sec{
+
+.pop-sec {
     position: fixed;
     top: 0;
     left: 0;
@@ -378,13 +384,12 @@ button,
     transition: all .7s;
 }
 
-.pop-sec.open{
+.pop-sec.open {
     opacity: 1;
     visibility: visible;
 }
 
-
-.pop-sec .form{
+.pop-sec .form {
     background-color: #FFF;
     width: 100%;
     max-width: 400px;
@@ -393,14 +398,14 @@ button,
     border-radius: 5px;
 }
 
-.pop-sec .form .form-title{
+.pop-sec .form .form-title {
     text-align: center;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     color: var(--OffNavyBlue);
 }
 
-.pop-sec .form textarea{
+.pop-sec .form textarea {
     display: inline-block;
     width: 100%;
     padding: 10px 15px;
@@ -409,7 +414,7 @@ button,
     border-radius: 3px;
 }
 
-.pop-sec .form .ctg-slct{
+.pop-sec .form .ctg-slct {
     display: inline-block;
     width: 100%;
     padding: 10px 15px;
@@ -418,21 +423,22 @@ button,
     border-radius: 3px;
 }
 
-.pop-sec .form-btns{
+.pop-sec .form-btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.pop-sec .form-btns .btn:first-child{
+.pop-sec .form-btns .btn:first-child {
     margin-right: 1rem;
 }
 
-.pop-sec .form-btns .btn:last-child{
+.pop-sec .form-btns .btn:last-child {
     border: 2px solid var(--OffNavyBlue);
     background-color: transparent;
     color: var(--OffNavyBlue);
 }
+
 
 /* -----------------------------------------------------------------
     Style Footer Section
@@ -487,4 +493,3 @@ button,
 .social-icons i {
     font-size: 1.5em;
 }
-
