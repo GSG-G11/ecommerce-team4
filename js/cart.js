@@ -1,7 +1,6 @@
-
 // Add Products to Cart Page
 function addProductToCartPage(cartProduct) {
-    
+
     let cartList = document.querySelector(".cart .cart-list");
     cartList.innerHTML = "";
     cartProduct.forEach(product => {
@@ -26,12 +25,12 @@ function addProductToCartPage(cartProduct) {
     });
 }
 
-let cartProductList = document.querySelector(".cart .cart-list");
+const cartProductList = document.querySelector(".cart .cart-list");
 
 cartProductList.addEventListener("click", (e) => {
     let thisIs = e.target;
 
-    if (thisIs.dataset.id === "delete"){
+    if (thisIs.dataset.id === "delete") {
         thisIs.parentElement.parentElement.remove();
         cartProduct = cartProduct.filter(product => product.id != thisIs.parentElement.parentElement.dataset.id);
         addCartToLocalStorage(cartProduct)
@@ -40,3 +39,10 @@ cartProductList.addEventListener("click", (e) => {
 })
 
 
+const deleteBtn = document.querySelector(".delete-all-items");
+
+deleteBtn.addEventListener("click", () => {
+    cartProduct = [];
+    addCartToLocalStorage(cartProduct);
+    addProductToCartPage(cartProduct);
+})
