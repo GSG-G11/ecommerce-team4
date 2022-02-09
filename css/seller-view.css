@@ -12,25 +12,44 @@
 
 -----------------------------------------------------------------------------------*/
 
+
 /* -----------------------------------------------------------------
 Style Section seller
 --------------------------------------------------------------------*/
 
+.first-look {
+    background-color: var(--LightPurble);
+    width: 100%;
+    font-size: 2rem;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title {
+    color: var(--OffBlue);
+}
+
 .seller {
     margin-top: 50px;
 }
+
 .seller .seller-add {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .seller .seller-add .seller-title {
     color: var(--NavyBlue);
 }
+
 .seller .seller-add .seller-title::first-letter {
     color: var(--Pink);
     font-size: 2.3rem;
 }
+
 .seller .seller-add button {
     width: 100px;
     background-color: transparent;
@@ -40,6 +59,7 @@ Style Section seller
     color: var(--NavyBlue);
     transition: all 0.5s ease-in-out;
 }
+
 .seller .seller-add button:hover {
     background-color: var(--NavyBlue);
     color: #fff;
@@ -49,6 +69,7 @@ Style Section seller
 .seller .seller-add .ri-add-circle-line:before {
     font-size: 2rem;
 }
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -60,6 +81,7 @@ Style Section seller
     height: 200px;
     overflow: hidden;
 }
+
 .card-img img {
     max-width: 100%;
     width: 100%;
@@ -67,33 +89,40 @@ Style Section seller
     object-fit: cover;
     transition: all 0.5s ease-in-out;
 }
+
 .card-img:hover img {
     transform: scale(1.2);
 }
+
 .card-body {
     width: 70%;
     height: 200px;
     padding-top: 15px;
 }
+
 .card-body .card-title {
     color: var(--NavyBlue);
     font-weight: bold;
     font-size: 1.5rem;
 }
+
 .card-body .card-title span {
     font-size: 0.7rem;
     color: var(--Pink);
 }
+
 .card-body .card-price {
     display: inline-block;
     margin: 5px 0px;
     color: var(--Pink);
 }
+
 .card-body .card-text {
     color: var(--PantonePurple);
     width: 50%;
     margin: 5px 0px;
 }
+
 .card-body button {
     display: inline-block;
     width: 40px;
@@ -105,10 +134,12 @@ Style Section seller
     color: var(--NavyBlue);
     transition: all 0.5s ease-in-out;
 }
+
 .ri-delete-bin-6-line:before,
 .ri-edit-circle-line:before {
     font-size: 1.3rem;
 }
+
 .card-body button:hover {
     background-color: var(--NavyBlue);
     color: #fff;

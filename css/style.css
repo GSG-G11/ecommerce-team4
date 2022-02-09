@@ -12,11 +12,14 @@
 
 -----------------------------------------------------------------------------------*/
 
+
 /* -----------------------------------------------------------------
     Style Slider Section
 --------------------------------------------------------------------*/
 
+
 /* Variables */
+
 :root {
     --Pink: #fb2e86;
     --Red: #fa2546;
@@ -28,6 +31,7 @@
     --Purple: #7e33e0;
     --OffPurple: #a065b4;
     --OffBlue: #151875;
+    --LightPurble: #F6F5FF;
 }
 
 * {
@@ -79,16 +83,16 @@ button,
 /* -----------------------------------------------------------------
     Style Signup Page
 --------------------------------------------------------------------*/
-.account-page{
+
+.account-page {
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
-    url(../img/sign-back.png) no-repeat center center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sign-back.png) no-repeat center center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.account-page .form{
+.account-page .form {
     background-color: #FFF;
     padding: 0 15px;
     width: 100%;
@@ -99,15 +103,14 @@ button,
     overflow: hidden;
 }
 
-.account-page .form-btns{
+.account-page .form-btns {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-
 }
 
-.form-btns .btn{
+.form-btns .btn {
     flex-basis: 50%;
     padding: 15px;
     font-weight: 600;
@@ -118,27 +121,27 @@ button,
     transition: color .4s, opacity .4s;
 }
 
-.form .form-btns .btn#customer-acc{
+.form .form-btns .btn#customer-acc {
     opacity: 1;
     color: var(--NavyBlue);
 }
 
-.form.seller .form-btns .btn#seller-acc{
+.form.seller .form-btns .btn#seller-acc {
     opacity: 1;
     color: var(--NavyBlue);
 }
 
-.form.seller .form-btns .btn#customer-acc{
+.form.seller .form-btns .btn#customer-acc {
     opacity: .7;
     color: var(--OffNavyBlue);
 }
 
-.form-btns .btn:hover{
+.form-btns .btn:hover {
     opacity: 1;
     color: var(--NavyBlue);
 }
 
-.account-page .form .main-form{
+.account-page .form .main-form {
     position: absolute;
     top: 100px;
     padding: 0 15px;
@@ -147,7 +150,7 @@ button,
     transition: all .8s;
 }
 
-.form .main-form input{
+.form .main-form input {
     display: inline-block;
     width: 100%;
     padding: 10px 15px;
@@ -156,7 +159,7 @@ button,
     border-radius: 3px;
 }
 
-.form .main-form .btn{
+.form .main-form .btn {
     display: inline-block;
     width: 100%;
     padding: 12px 20px;
@@ -170,33 +173,35 @@ button,
     transition: opacity .5s;
 }
 
-.form .main-form .btn:hover{
+.form .main-form .btn:hover {
     opacity: 1;
 }
 
-.form .main-form#seller-form{
+.form .main-form#seller-form {
     left: -350px;
     transform: translateX(0);
 }
 
-.form .main-form#customer-form{
+.form .main-form#customer-form {
     left: 0;
     transform: translateX(0);
 }
 
-.form.seller .main-form#seller-form{
+.form.seller .main-form#seller-form {
     transform: translateX(350px);
 }
 
-.form.seller .main-form#customer-form{
+.form.seller .main-form#customer-form {
     transform: translateX(350px);
 }
+
 
 /* -----------------------------------------------------------------
     Style Page Header
 --------------------------------------------------------------------*/
-.page-header .main-header{
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url(../img/page-header.png) center center no-repeat;
+
+.page-header .main-header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/page-header.png) center center no-repeat;
     height: 95vh;
     display: flex;
     justify-content: center;
@@ -204,13 +209,13 @@ button,
     text-align: center;
 }
 
-.main-header .page-title{
+.main-header .page-title {
     color: #FFF;
     font-size: 4rem;
     margin-bottom: 2rem;
 }
 
-.main-header .btn{
+.main-header .btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -221,11 +226,11 @@ button,
     letter-spacing: .5px;
 }
 
-.main-header .btn:hover i{
+.main-header .btn:hover i {
     margin-right: 20px;
 }
 
-.main-header .btn i{
+.main-header .btn i {
     width: 35px;
     height: 35px;
     font-weight: normal;
@@ -243,7 +248,8 @@ button,
 /* -----------------------------------------------------------------
     Style Navbar
 --------------------------------------------------------------------*/
-.navbar{
+
+.navbar {
     padding: 25px 0;
     position: absolute;
     top: 0;
@@ -252,42 +258,42 @@ button,
     transition: all .4s;
 }
 
-.navbar .nav-content{
+.navbar .nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar .brand{
+.navbar .brand {
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar .brand{
+.navbar .brand {
     color: #FFF;
 }
 
-.brand img{
+.brand img {
     width: 40px;
     margin-right: 10px;
 }
 
-.navbar .link-list{
+.navbar .link-list {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
-.link-list .item-link{
+.link-list .item-link {
     padding: 5px 15px;
     color: #FFF;
     font-weight: 400;
     font-size: 1.1rem;
 }
 
-.navbar .btns-div .btn{
+.navbar .btns-div .btn {
     background-color: transparent;
     color: #FFF;
     display: inline-flex;
@@ -300,12 +306,12 @@ button,
     transition: all .4s;
 }
 
-.navbar .btns-div .btn:hover{
+.navbar .btns-div .btn:hover {
     background: #FFF;
     color: #000;
 }
 
-.navbar .search-form{
+.navbar .search-form {
     position: absolute;
     top: -100px;
     left: 0;
@@ -319,14 +325,14 @@ button,
     transition: all .7s;
 }
 
-.navbar .search-form.open{
+.navbar .search-form.open {
     opacity: 1;
     visibility: visible;
     top: 0;
     z-index: 9999;
 }
 
-.navbar .search-form .inpt{
+.navbar .search-form .inpt {
     display: inline-block;
     flex: 1;
     font-size: 1.5rem;
@@ -335,11 +341,11 @@ button,
     font-weight: bold;
 }
 
-.navbar .search-form .inpt::placeholder{
+.navbar .search-form .inpt::placeholder {
     color: #a065b438;
 }
 
-.navbar .search-form .btn{
+.navbar .search-form .btn {
     padding: 5px 15px;
     font-size: 1.5rem;
     margin: 0 5px;
@@ -347,46 +353,56 @@ button,
     color: #7e33e0;
 }
 
+
 /* -----------------------------------------------------------------
     Style Footer Section
 --------------------------------------------------------------------*/
-.page-footer{
+
+.page-footer {
     color: var(--SkyBlue);
-    background-color: var(--Purple); 
+    background-color: var(--Purple);
     padding: 1em;
 }
-.container-footer{
+
+.container-footer {
     width: 100%;
     display: grid;
     gap: 2em;
-    grid-template-columns: 4fr 2fr 2fr 2fr ;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
     box-sizing: border-box;
 }
 
-.copyright{
+.copyright {
     grid-column: 2/5;
 }
 
-.logo .social-icons li{
-    display:inline;
+.logo .social-icons li {
+    display: inline;
     margin-right: 1rem;
 }
-.left-footer li, .center-footer li, .right-footer li{
+
+.left-footer li,
+.center-footer li,
+.right-footer li {
     display: block;
     margin-top: .5rem;
 }
 
-.left-footer h2, .center-footer h2, .right-footer h2{
+.left-footer h2,
+.center-footer h2,
+.right-footer h2 {
     margin-bottom: 1rem;
 }
 
-.logo h1{
-    margin-bottom: 1rem;
-}
-.copyright p,.logo p{
+.logo h1 {
     margin-bottom: 1rem;
 }
 
-.social-icons i{
+.copyright p,
+.logo p {
+    margin-bottom: 1rem;
+}
+
+.social-icons i {
     font-size: 1.5em;
 }
