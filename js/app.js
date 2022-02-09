@@ -1,6 +1,6 @@
 let arrOfProduct = [];
 
-if (window.localStorage.getItem("products")){
+if (window.localStorage.getItem("products")) {
     arrOfProduct = JSON.parse(window.localStorage.getItem("products"));
 }
 
@@ -29,7 +29,7 @@ saveBtn.addEventListener("click", (e) => {
 })
 
 
-function addProductToArray (name, dsec, img, price, ctg){
+function addProductToArray(name, dsec, img, price, ctg) {
     const product = {
         id: Date.now(),
         name: name,
@@ -51,14 +51,22 @@ function addProductToArray (name, dsec, img, price, ctg){
     return arrOfProduct;
 }
 
-function getProductsFromLocalStorage () {
+function getProductsFromLocalStorage() {
     let data = window.localStorage.getItem("products");
     if (data) {
         let productData = JSON.parse(data);
         addProductToPage(productData);
     }
 }
+let listOfProduct = document.querySelector(".seller .product-list");
+listOfProduct.addEventListener("click", (e) => {
+    if (e.target.dataset.id === "delete") {
+        e.target.parentElement.parentElement.remove();
+        arrOfProduct = arrOfProduct.filter(product => product.id != e.target.parentElement.parentElement.dataset.id)
+        addToLocalStorage(arrOfProduct);
+    }
 
+})
 
 
 module.exports = {
