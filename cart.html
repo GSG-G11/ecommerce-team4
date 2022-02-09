@@ -37,9 +37,9 @@
                     </a>
 
                     <ul class="link-list">
-                        <li class="item"><a href="#" class="item-link">Products</a></li>
-                        <li class="item"><a href="#" class="item-link">Insipiration</a></li>
-                        <li class="item"><a href="#" class="item-link">Rooms</a></li>
+                        <li class="item"><a href="seller-view.html" class="item-link">Seller</a></li>
+                        <li class="item"><a href="customer-view.html" class="item-link">Customer</a></li>
+                        <li class="item"><a href="cart.html" class="item-link">Cart</a></li>
                     </ul>
 
                     <div class="btns-div">
@@ -51,9 +51,9 @@
                             <i class="ri-shopping-cart-2-line"></i>
                         </button>
 
-                        <button class="btn logout-btn" id="logout-btn">
+                        <a href="index.html" class="btn logout-btn" id="logout-btn">
                             <i class="ri-logout-box-r-line"></i>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -81,78 +81,14 @@
 
         <div class="container">
             <!-- start the list content -->
-            <div class="list-of-item-added-to-cart">
+            <div class="list-of-item-added-to-cart cart">
                 <div class="title-of-product">
                     <h4 class="title-of-all-product">Product</h4>
                     <h4 class="title-of-all-product">Price</h4>
                 </div>
-                <div class="product-list">
-                    <div class="img-with-product">
-                        <img class="img-of-product" src="img/product1.png" alt="image of the product" />
-                        <div class="title-of-product-and-description">
-                            <h5 class="title-of-the-product">Labtop</h5>
-                            <p class="description-of-the-product">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos modi earum fugiat autem hic temporibus aut, deleniti labore. Maxime, rerum nisi aperiam aliquam voluptas doloremque perspiciatis at impedit quo?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="delete-and-price">
-                        <button class="icon-button">
-                            <i class="ri-close-circle-line"></i>
-                        </button>
-                        <h5 class="price-of-product">$200</h5>
-                    </div>
-                </div>
-                <div class="product-list">
-                    <div class="img-with-product">
-                        <img class="img-of-product" src="img/product1.png" alt="image of the product" />
-                        <div class="title-of-product-and-description">
-                            <h5 class="title-of-the-product">Labtop</h5>
-                            <p class="description-of-the-product">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos modi earum fugiat autem hic temporibus aut, deleniti labore. Maxime, rerum nisi aperiam aliquam voluptas doloremque perspiciatis at impedit quo?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="delete-and-price">
-                        <button class="icon-button">
-                            <i class="ri-close-circle-line"></i>
-                            </button>
-                        <h5 class="price-of-product">$200</h5>
-                    </div>
-                </div>
-                <div class="product-list">
-                    <div class="img-with-product">
-                        <img class="img-of-product" src="img/product1.png" alt="image of the product" />
-                        <div class="title-of-product-and-description">
-                            <h5 class="title-of-the-product">Labtop</h5>
-                            <p class="description-of-the-product">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos modi earum fugiat autem hic temporibus aut, deleniti labore. Maxime, rerum nisi aperiam aliquam voluptas doloremque perspiciatis at impedit quo?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="delete-and-price">
-                        <button class="icon-button">
-                            <i class="ri-close-circle-line"></i>
-                            </button>
-                        <h5 class="price-of-product">$200</h5>
-                    </div>
-                </div>
-                <div class="product-list">
-                    <div class="img-with-product">
-                        <img class="img-of-product" src="img/product1.png" alt="image of the product" />
-                        <div class="title-of-product-and-description">
-                            <h5 class="title-of-the-product">Labtop</h5>
-                            <p class="description-of-the-product">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos modi earum fugiat autem hic temporibus aut, deleniti labore. Maxime, rerum nisi aperiam aliquam voluptas doloremque perspiciatis at impedit quo?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="delete-and-price">
-                        <button class="icon-button">
-                            <i class="ri-close-circle-line"></i>
-                            </button>
-                        <h5 class="price-of-product">$200</h5>
-                    </div>
+                <!-- List Of Cart -->
+                <div class="cart-list">
+
                 </div>
             </div>
             <!-- end the list content -->
@@ -168,6 +104,7 @@
             </div>
             <!-- end  total price and delete all-->
         </div>
+
     </main>
     <!-- End Page Main -->
 
@@ -225,9 +162,11 @@
 
     <!-- Calling Js Files -->
     <script src="js/app.js"></script>
+    <script src="js/customer.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/dom.js"></script>
     <!-- For Front End -->
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>

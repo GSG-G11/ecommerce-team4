@@ -52,16 +52,6 @@ function addProductToArray(name, dsec, img, price, ctg) {
     return arrOfProduct;
 }
 
-// function getProductsFromLocalStorage() {
-//     let data = window.localStorage.getItem("products");
-//     if (data) {
-//         let productData = JSON.parse(data);
-//         addProductToPage(productData);
-//         addProductToCustomerPage(productData)
-//     }
-// }
-// getProductsFromLocalStorage();
-
 let listOfProduct = document.querySelector(".seller .product-list");
 listOfProduct.addEventListener("click", (e) => {
     if (e.target.dataset.id === "delete") {
