@@ -75,15 +75,128 @@ button,
     padding: 0 15px;
 }
 
+
+/* -----------------------------------------------------------------
+    Style Signup Page
+--------------------------------------------------------------------*/
+.account-page{
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
+    url(../img/sign-back.png) no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-page .form{
+    background-color: #FFF;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.account-page .form-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.form-btns .btn{
+    flex-basis: 50%;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--OffNavyBlue);
+    opacity: .7;
+    background-color: transparent;
+    transition: color .4s, opacity .4s;
+}
+
+.form .form-btns .btn#customer-acc{
+    opacity: 1;
+    color: var(--NavyBlue);
+}
+
+.form.seller .form-btns .btn#seller-acc{
+    opacity: 1;
+    color: var(--NavyBlue);
+}
+
+.form.seller .form-btns .btn#customer-acc{
+    opacity: .7;
+    color: var(--OffNavyBlue);
+}
+
+.form-btns .btn:hover{
+    opacity: 1;
+    color: var(--NavyBlue);
+}
+
+.account-page .form .main-form{
+    position: absolute;
+    top: 100px;
+    padding: 0 15px;
+    max-width: 350px;
+    padding: 0 15px;
+    transition: all .8s;
+}
+
+.form .main-form input{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--PantonePurple);
+    margin: 0.6rem 0;
+    border-radius: 3px;
+}
+
+.form .main-form .btn{
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 2rem;
+    border-radius: 3px;
+    background-color: var(--OffNavyBlue);
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    opacity: .8;
+    transition: opacity .5s;
+}
+
+.form .main-form .btn:hover{
+    opacity: 1;
+}
+
+.form .main-form#seller-form{
+    left: -350px;
+    transform: translateX(0);
+}
+
+.form .main-form#customer-form{
+    left: 0;
+    transform: translateX(0);
+}
+
+.form.seller .main-form#seller-form{
+    transform: translateX(350px);
+}
+
+.form.seller .main-form#customer-form{
+    transform: translateX(350px);
+}
+
 /* -----------------------------------------------------------------
     Style Page Header
 --------------------------------------------------------------------*/
-.page-header{
-    height: 95vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url(../img/page-header.png) center center no-repeat;
-}
-
 .page-header .main-header{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url(../img/page-header.png) center center no-repeat;
     height: 95vh;
     display: flex;
     justify-content: center;
@@ -132,7 +245,7 @@ button,
 --------------------------------------------------------------------*/
 .navbar{
     padding: 25px 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
