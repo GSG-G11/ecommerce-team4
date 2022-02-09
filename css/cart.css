@@ -17,75 +17,11 @@
     Style Slider Section
 --------------------------------------------------------------------*/
 
-
-/* Variables */
-
-:root {
-    --Pink: #fb2e86;
-    --Red: #fa2546;
-    --Blue: #2f1ac4;
-    --OffNavyBlue: #424e9b;
-    --NavyBlue: #151875;
-    --SkyBlue: #f2f1ff;
-    --PantonePurple: #e1d2f6;
-    --Purple: #7e33e0;
-    --OffPurple: #a065b4;
-    --OffBlue: #151875;
-    --LightPurble: #F6F5FF;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Lato", sans-serif;
-}
-
-a {
-    color: var(--PrimaryColor);
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-button,
-button:focus,
-input,
-input:focus,
-textarea,
-textarea:focus {
-    outline: none;
-    border: none;
-}
-
-button,
-.btn {
-    cursor: pointer;
-}
-
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-
-/* -----------------------------------------------------------------
-    Style Slider Section
---------------------------------------------------------------------*/
 
 
 /* start title for the whole page */
@@ -242,3 +178,7 @@ button,
 
 
 /* end total price and delete all */
+
+.page-footer {
+    margin-top: 1rem;
+}

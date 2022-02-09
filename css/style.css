@@ -12,11 +12,14 @@
 
 -----------------------------------------------------------------------------------*/
 
+
 /* -----------------------------------------------------------------
     Style Slider Section
 --------------------------------------------------------------------*/
 
+
 /* Variables */
+
 :root {
     --Pink: #fb2e86;
     --Red: #fa2546;
@@ -28,6 +31,7 @@
     --Purple: #7e33e0;
     --OffPurple: #a065b4;
     --OffBlue: #151875;
+    --LightPurble: #F6F5FF;
 }
 
 * {
@@ -75,15 +79,17 @@ button,
     padding: 0 15px;
 }
 
+
 /* -----------------------------------------------------------------
     Style Page Header
 --------------------------------------------------------------------*/
-.page-header.home{
+
+.page-header.home {
     height: 95vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url(../img/page-header.png) center center no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/page-header.png) center center no-repeat;
 }
 
-.page-header .main-header{
+.page-header .main-header {
     height: 95vh;
     display: flex;
     justify-content: center;
@@ -91,13 +97,13 @@ button,
     text-align: center;
 }
 
-.main-header .page-title{
+.main-header .page-title {
     color: #FFF;
     font-size: 4rem;
     margin-bottom: 2rem;
 }
 
-.main-header .btn{
+.main-header .btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -108,11 +114,11 @@ button,
     letter-spacing: .5px;
 }
 
-.main-header .btn:hover i{
+.main-header .btn:hover i {
     margin-right: 20px;
 }
 
-.main-header .btn i{
+.main-header .btn i {
     width: 35px;
     height: 35px;
     font-weight: normal;
@@ -130,7 +136,8 @@ button,
 /* -----------------------------------------------------------------
     Style Navbar
 --------------------------------------------------------------------*/
-.navbar{
+
+.navbar {
     padding: 25px 0;
     position: absolute;
     top: 0;
@@ -139,42 +146,42 @@ button,
     transition: all .4s;
 }
 
-.navbar .nav-content{
+.navbar .nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar .brand{
+.navbar .brand {
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar .brand{
+.navbar .brand {
     color: #FFF;
 }
 
-.brand img{
+.brand img {
     width: 40px;
     margin-right: 10px;
 }
 
-.navbar .link-list{
+.navbar .link-list {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
-.link-list .item-link{
+.link-list .item-link {
     padding: 5px 15px;
     color: #FFF;
     font-weight: 400;
     font-size: 1.1rem;
 }
 
-.navbar .btns-div .btn{
+.navbar .btns-div .btn {
     background-color: transparent;
     color: #FFF;
     display: inline-flex;
@@ -187,12 +194,12 @@ button,
     transition: all .4s;
 }
 
-.navbar .btns-div .btn:hover{
+.navbar .btns-div .btn:hover {
     background: #FFF;
     color: #000;
 }
 
-.navbar .search-form{
+.navbar .search-form {
     position: absolute;
     top: -100px;
     left: 0;
@@ -206,14 +213,14 @@ button,
     transition: all .7s;
 }
 
-.navbar .search-form.open{
+.navbar .search-form.open {
     opacity: 1;
     visibility: visible;
     top: 0;
     z-index: 9999;
 }
 
-.navbar .search-form .inpt{
+.navbar .search-form .inpt {
     display: inline-block;
     flex: 1;
     font-size: 1.5rem;
@@ -222,11 +229,11 @@ button,
     font-weight: bold;
 }
 
-.navbar .search-form .inpt::placeholder{
+.navbar .search-form .inpt::placeholder {
     color: #a065b438;
 }
 
-.navbar .search-form .btn{
+.navbar .search-form .btn {
     padding: 5px 15px;
     font-size: 1.5rem;
     margin: 0 5px;
@@ -234,46 +241,56 @@ button,
     color: #7e33e0;
 }
 
+
 /* -----------------------------------------------------------------
     Style Footer Section
 --------------------------------------------------------------------*/
-.page-footer{
+
+.page-footer {
     color: var(--SkyBlue);
-    background-color: var(--Purple); 
+    background-color: var(--Purple);
     padding: 1em;
 }
-.container-footer{
+
+.container-footer {
     width: 100%;
     display: grid;
     gap: 2em;
-    grid-template-columns: 4fr 2fr 2fr 2fr ;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
     box-sizing: border-box;
 }
 
-.copyright{
+.copyright {
     grid-column: 2/5;
 }
 
-.logo .social-icons li{
-    display:inline;
+.logo .social-icons li {
+    display: inline;
     margin-right: 1rem;
 }
-.left-footer li, .center-footer li, .right-footer li{
+
+.left-footer li,
+.center-footer li,
+.right-footer li {
     display: block;
     margin-top: .5rem;
 }
 
-.left-footer h2, .center-footer h2, .right-footer h2{
+.left-footer h2,
+.center-footer h2,
+.right-footer h2 {
     margin-bottom: 1rem;
 }
 
-.logo h1{
-    margin-bottom: 1rem;
-}
-.copyright p,.logo p{
+.logo h1 {
     margin-bottom: 1rem;
 }
 
-.social-icons i{
+.copyright p,
+.logo p {
+    margin-bottom: 1rem;
+}
+
+.social-icons i {
     font-size: 1.5em;
 }
