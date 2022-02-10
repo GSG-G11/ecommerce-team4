@@ -1,9 +1,9 @@
 // Add Products to Cart Page
 function addProductToCartPage(cartProduct) {
-  let cartList = document.querySelector(".cart .cart-list");
+  let cartList = document.querySelector(".cart .product-list");
   cartList.innerHTML = "";
   cartProduct.forEach((product) => {
-    cartList.innerHTML += `<div class="product-list" data-id="${product.id}">
+    cartList.innerHTML += `<div class="cart-product" data-id="${product.id}">
                 <div class="img-with-product">
                     <img class="img-of-product" src="${product.img}" alt="image of the product" />
                     <div class="title-of-product-and-description">
@@ -23,7 +23,7 @@ function addProductToCartPage(cartProduct) {
   });
 }
 
-const cartProductList = document.querySelector(".cart .cart-list");
+const cartProductList = document.querySelector(".cart .product-list");
 
 cartProductList.addEventListener("click", (e) => {
   let thisIs = e.target;
@@ -34,6 +34,7 @@ cartProductList.addEventListener("click", (e) => {
       (product) => product.id != thisIs.parentElement.parentElement.dataset.id
     );
     addCartToLocalStorage(cartProduct);
+    getTotalPrice(cartProduct);
   }
 });
 
@@ -43,6 +44,7 @@ deleteBtn.addEventListener("click", () => {
   cartProduct = [];
   addCartToLocalStorage(cartProduct);
   addProductToCartPage(cartProduct);
+  getTotalPrice(cartProduct);
 });
 
 const totalPrice = document.querySelector(".total-price");

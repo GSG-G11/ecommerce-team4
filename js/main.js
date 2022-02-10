@@ -8,7 +8,6 @@ toggleSearch.forEach((btn) => {
         
         let contain = searchForm.classList.contains('open');
         contain ? searchForm.classList.remove("open") : searchForm.classList.add("open");
-        console.log("karam")
     })
 })
 

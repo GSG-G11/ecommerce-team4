@@ -57,8 +57,7 @@ function addProductToCustomerPage(arrOfProduct) {
                     <i class="ri-shopping-cart-line"></i>
                 </button>
                 <button class="card-delete">
-                   <i class="ri-heart-line">
-                    </i>
+                    <i class="ri-heart-line"></i>
                 </button>
             </div>
         </div>
