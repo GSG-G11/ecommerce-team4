@@ -103,6 +103,8 @@ listOfProduct.addEventListener("click", (e) => {
 })
 
 
-module.exports = {
-    addProductToArray
+if (typeof module !== "undefined") {
+        module.exports = {
+        addProductToArray 
+        };
 }
